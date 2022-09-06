@@ -1,16 +1,17 @@
 Package: mrdieter
 Type: Package
 Title: MadRat DIETER Input Data Package
-Version: 0.1.1
+Version: 0.2.0
 Authors@R: c(person("Falk", "Benke", email = "benke@pik-potsdam.de", role = c("aut","cre")))
 Description: The mrdieter package contains data preprocessing for the DIETER model.
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
 Encoding: UTF-8
 Depends:
     R(>= 2.10.0),
     magclass(>= 3.17),
     madrat(>= 2.5.1),
-    mrcommons(>= 1.7.1)
+    mrcommons(>= 1.7.1),
+    quitte
 Imports:
     dplyr,
     reshape2,
@@ -18,4 +19,4 @@ Imports:
 License: LGPL-3 | file LICENSE
 Suggests: 
     covr
-Date: 2022-07-08
+Date: 2022-09-06

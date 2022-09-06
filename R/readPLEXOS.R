@@ -27,7 +27,7 @@ readPLEXOS <- function() {
     melt(id.vars = 1, variable.name = "region") %>%
     mutate(region = sub(".*?\\.", "", !!sym("region"))) %>%
     filter(!grepl("\\.", !!sym("region"))) %>%
-    mutate(hour = .getHourOfYear(!!sym("Datetime")), year = "2015") %>%
+    mutate(hour = paste0("h", .getHourOfYear(!!sym("Datetime"))), year = "2015") %>%
     filter(!!sym("region") != "KOS") %>%
     select("region", "year", "hour", "value")
 
